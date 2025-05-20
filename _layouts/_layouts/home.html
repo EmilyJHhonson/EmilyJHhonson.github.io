@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- CABECERA FIJA -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#parrilla">Parrilla</a></li>
+          <li><a href="#why">Why Choose</a></li>
+          <li><a href="#clean">What We Clean</a></li>
+          <li><a href="#spotless">Spotless</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn-contact">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- HERO FULL-WIDTH -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Quick Cleaning</h1>
+      <p>Your team can work with you on space planning, interior treatments…</p>
+      <a href="#contact" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="site-content">
+    {{ content }}
+  </main>
+
+</body>
+</html>
 
